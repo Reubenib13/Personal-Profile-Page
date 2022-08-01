@@ -1,0 +1,24 @@
+.row .column-left {
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.row .column-right {
+    float: left;
+    width: 40%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.row .portfolio-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    color: white;
+    background-color: rgb(110, 37, 200);
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    box-sizing: border-box;
+}
