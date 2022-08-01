@@ -8,6 +8,7 @@
   <meta name="keywords" content="Reuben, Reubenib13, Braybrook, Reuben Braybrook, portfolio, profile, programming, web dev, web development, about me">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="portfolio.css">
+  <script src="script.js" defer></script>
 
   <!-- Google fonts - Headers - Open Sans-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,15 @@
     </div>
   </header>
 
-  <nav id="navbar">
+  <nav class="navbar">
     <div class="container">
-      <ul>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      
+      <ul class="blah">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -48,7 +55,7 @@
     <div class="row">
       <div class="column-left">
         <a href="#" target="_blank">
-          <div class="card">
+          <div class="portfolio-card">
             <h1>Full Stack Website</h1>
             <p>Aliquip enim tempor reprehenderit quis deserunt anim aute elit consequat ex. Deserunt sit consequat ut voluptate exercitation in cupidatat. Ut tempor ullamco magna proident id et nulla culpa tempor nostrud fugiat dolor.</p>
           </div>
@@ -58,10 +65,10 @@
 
       <div class="column-right">
         <a href="https://github.com/Reubenib13/Pokemon_Game" target="_blank">
-          <div class="card">
+          <div class="portfolio-card">
             <h1>Python CLI Pokemon</h1>
             <p>Aptly named Pokemon Game is a simple text based game 
-              built in Python. This is one of the first programms i ever
+              built in Python. This is one of the first programms I ever
               wrote and through it I applied the begginner fundamentals 
               of Python.
             </p>
@@ -75,7 +82,7 @@
     <div class="row">
       <div class="column-right">
         <a href="https://github.com/Reubenib13/Personal-Profile-Page" target="_blank">
-          <div class="card">
+          <div class="portfolio-card">
             <h1>This Website</h1>
             <p>I created the website you are viewing now in pure HTML and CSS
               applying the basics of static front-end web development for the first 
@@ -89,7 +96,7 @@
 
       <div class="column-left">
         <a href="https://github.com/Reubenib13/Pokemon_Game" target="_blank">
-          <div class="card">
+          <div class="portfolio-card">
             <h1>Python Blackjack Game</h1>
             <p>This simple CLI game built in Python is the first project I created in 
               2018. This is where I first applied the basics of logic, loops and functions

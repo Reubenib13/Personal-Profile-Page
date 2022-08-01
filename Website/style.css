@@ -38,25 +38,70 @@ img.profile {
     line-height: 50px;
 }
 
-#navbar {
+.navbar {
     background-color: rgb(110, 37, 200);
     color: white;
 }
 
-#navbar ul {
+.navbar ul {
     padding: 0;
     list-style: none;
 }
 
-#navbar li {
+.navbar li {
     display: inline;
 }
 
-#navbar a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding-right: 35px;
+}
+
+.navbar a:hover {
+    color: rgb(198, 99, 255)
+}
+
+.toggle-button {
+    position: absolute;
+    top: 6rem;
+    right: .7rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 730px) {
+    .navbar .blah {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+
+    .navbar li {
+        padding-top: 0.5rem;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
 }
 
 #showcase {
@@ -123,6 +168,11 @@ img.profile {
     color: white;
 }
 
+#socials-header a {
+    color: white;
+    text-decoration: none;
+}
+
 #socials {
     list-style: none;
     padding-left: 0px;
@@ -183,13 +233,6 @@ img.profile {
 .row .card p {text-align: center; hyphens: manual}
 
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        border: 10px solid rgb(198, 99, 255);;
-    }
-
     #main{
         width: 100%;
         float: none;
@@ -198,7 +241,7 @@ img.profile {
     #sidebar{
         width: 100%;
         float: none;
-}
+    }
 }
 
 .spacer {

@@ -16,9 +16,36 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    color: white;
     background-color: rgb(110, 37, 200);
     padding-bottom: 100%;
     margin-bottom: -100%;
     box-sizing: border-box;
+}
+
+
+a {
+    color:white;
+}
+
+a:hover {
+    color: rgb(198, 99, 255)
+}
+
+@media (max-width: 600px) {
+    .row .column-left {
+        float: none;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .row .column-right {
+        float: none;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .row .portfolio-card {
+        border-top: 10px solid rgb(198, 99, 255);
+        box-shadow: none;
+    }
 }
